@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vuejs2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <center><h1>{{ titulo }}</h1></center>
+        <center>
+        <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/07/origen-nombres-informatica-nunca-hubieras-imaginado_2.jpg" height="300" width="500">
+        </center>
+        <h2>{{ subtitulo }}</h2>
+        <b><i>{{ contenido }}</i></b>
+        <br><br>
+        <b>{{ nombres }}</b>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data() {
+                return {
+                    titulo: 'Significado de Informática',
+                    subtitulo: 'Qué es Informática',
+                    contenido: 'Informática es el tratamiento automático de la información. Como tal, la informática designa a un conjunto de conocimientos teóricos y prácticos, relativos al ámbito de la ciencia y de la tecnología, que se combinan para posibilitar el tratamiento racional y automático de la información mediante sistemas informáticos o computadoras.',
+                    nombres: 'Pula ochoa y Sandra Morales'
+                }
+            }
+
+        });
+    </script>
+</body>
+</html>
